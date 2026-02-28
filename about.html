@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于我 - 我的博客</title>
+  <title>关于我 - My Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<canvas id="particles"></canvas>
+
 <header>
   <nav>
-    <a href="index.html" class="logo">My Blog</a>
+    <a href="index.html" class="logo">&#10024; My Blog</a>
     <ul class="nav-links">
       <li><a href="index.html">首页</a></li>
       <li><a href="about.html" class="active">关于</a></li>
@@ -19,24 +21,33 @@
 </header>
 
 <main>
-  <section class="about-section">
+  <section class="about-section fade-up">
     <h1>关于我</h1>
-    <p>你好！欢迎来到我的个人博客。我是一名热爱技术的开发者，这里是我记录学习历程和分享想法的地方。</p>
+    <p>你好！欢迎来到我的个人博客。我是一名热爱技术的开发者，这里是我记录学习历程和分享想法的空间。</p>
+    <p>我相信持续学习和分享是成长最快的方式。在这个博客里，你会看到我的技术探索、项目实践和对生活的思考。</p>
 
-    <h2>技术栈</h2>
-    <ul>
-      <li>前端：HTML / CSS / JavaScript</li>
-      <li>持续学习中…</li>
-    </ul>
+    <h2>&#127919; 技术栈</h2>
+    <div class="skill-grid">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Git</div>
+      <div class="skill-item">学习中…</div>
+    </div>
 
-    <h2>联系方式</h2>
-    <p>你可以通过 GitHub 找到我。</p>
+    <h2>&#128172; 联系方式</h2>
+    <p>你可以通过 GitHub 找到我，也欢迎在文章下方留言交流。</p>
   </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 My Blog. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="about.html">关于</a></li>
+  </ul>
+  <p>&copy; 2026 My Blog. Built with &#10084;&#65039;</p>
 </footer>
 
+<script src="particles.js"></script>
 </body>
 </html>

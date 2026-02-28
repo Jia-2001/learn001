@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的博客</title>
+  <title>My Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<canvas id="particles"></canvas>
+
 <header>
   <nav>
-    <a href="index.html" class="logo">My Blog</a>
+    <a href="index.html" class="logo">&#10024; My Blog</a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">首页</a></li>
       <li><a href="about.html">关于</a></li>
@@ -20,41 +22,47 @@
 
 <main>
   <section class="hero">
+    <div class="hero-glow"></div>
     <h1>欢迎来到我的博客</h1>
-    <p>记录技术、生活与思考</p>
+    <p>探索技术 · 记录成长 · 分享灵感</p>
   </section>
 
   <section class="post-list">
-    <div class="post-card">
+    <div class="post-card fade-up">
       <h2><a href="posts/hello-world.html">Hello World — 博客的第一篇文章</a></h2>
       <div class="post-meta">
         <span>2026-02-28</span>
       </div>
       <p class="post-excerpt">这是我的个人博客的第一篇文章，在这里我会分享技术学习笔记、项目经验以及日常思考。</p>
       <div class="tags">
-        <span class="tag">随笔</span>
-        <span class="tag">博客</span>
+        <span class="tag tag-purple">随笔</span>
+        <span class="tag tag-cyan">博客</span>
       </div>
     </div>
 
-    <div class="post-card">
+    <div class="post-card fade-up">
       <h2><a href="posts/learning-html-css.html">从零开始学习 HTML 与 CSS</a></h2>
       <div class="post-meta">
         <span>2026-02-27</span>
       </div>
       <p class="post-excerpt">HTML 和 CSS 是构建网页的基石。本文梳理了最核心的概念，帮助初学者快速入门前端开发。</p>
       <div class="tags">
-        <span class="tag">前端</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
+        <span class="tag tag-pink">前端</span>
+        <span class="tag tag-orange">HTML</span>
+        <span class="tag tag-cyan">CSS</span>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 My Blog. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="about.html">关于</a></li>
+  </ul>
+  <p>&copy; 2026 My Blog. Built with &#10084;&#65039;</p>
 </footer>
 
+<script src="particles.js"></script>
 </body>
 </html>

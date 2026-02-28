@@ -8,9 +8,11 @@
 </head>
 <body>
 
+<canvas id="particles"></canvas>
+
 <header>
   <nav>
-    <a href="../index.html" class="logo">My Blog</a>
+    <a href="../index.html" class="logo">&#10024; My Blog</a>
     <ul class="nav-links">
       <li><a href="../index.html">首页</a></li>
       <li><a href="../about.html">关于</a></li>
@@ -19,7 +21,8 @@
 </header>
 
 <main>
-  <article>
+  <a href="../index.html" class="back-link">&#8592; 返回首页</a>
+  <article class="fade-up">
     <h1>Hello World — 博客的第一篇文章</h1>
     <div class="post-meta">
       <span>2026-02-28</span>
@@ -58,8 +61,13 @@ greet('World');</code></pre>
 </main>
 
 <footer>
-  <p>&copy; 2026 My Blog. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="../index.html">首页</a></li>
+    <li><a href="../about.html">关于</a></li>
+  </ul>
+  <p>&copy; 2026 My Blog. Built with &#10084;&#65039;</p>
 </footer>
 
+<script src="../particles.js"></script>
 </body>
 </html>
